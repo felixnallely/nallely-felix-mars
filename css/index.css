@@ -1,0 +1,42 @@
+body {
+    background-color: lightpink;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 { 
+    text-align: center;
+    font-size: 25px;
+    color: purple;
+    border: groove black 6px;
+}
+
+section {
+    margin: 10px 15px 10px 15px;
+    padding: 15px 10px 15px 10px;
+    border: double black 5px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+
+#About {
+    text-align: center;
+    background-color: lightblue;
+}
+
+#Experience {
+    background-color: lightskyblue;
+}
+#Experience li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 10px 15px 10px 15px;
+}
+
+#Connection a {
+    color: blueviolet;
+}
