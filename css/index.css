@@ -4,10 +4,11 @@
 @media (min-width:600px) {
     #About {
         color: white;
-        text-align: center;
+        font-size: 22px;
     }
     #Experience {
         color: white;
+        font-size: 23px;
     }
     #Skills {
         color: white;
@@ -109,6 +110,11 @@ h2 {
     h2 {
         color: purple;
         background-color: lightpink;
+        font-size: 25px;
+    }
+    .experience-header {
+        font-size: 18px;
+        color: black;
     }
 }
 
@@ -119,5 +125,9 @@ h2 {
     h2 {
         font-size: 30px;
         color: blue;
+    }
+    #Connect a {
+        font-size: 22px;
+        color: red;
     }
 }
