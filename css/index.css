@@ -4,6 +4,19 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+header nav ul{
+    display: flex; 
+    justify-content: center;
+    list-style-type: none; 
+    gap: 20px;
+}
+
 h1 { 
     text-align: center;
     font-size: 25px;
@@ -31,10 +44,35 @@ h2 {
 #Experience {
     background-color: lightskyblue;
 }
-#Experience li {
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* #Experience li {
     list-style-type: none;
     padding: 0px;
     margin: 10px 15px 10px 15px;
+}  */
+
+#Skills {
+    background-color: lightblue;
+}
+
+#Projects {
+    background-color: lightskyblue;
+}
+
+#Connect {
+    background-color:lightblue;
+}
+
+#Connect ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #Connect a {
