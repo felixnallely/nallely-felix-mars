@@ -1,3 +1,28 @@
+/* =================== */
+/* Mobile */
+/* =================== */
+@media (min-width:600px) {
+    #About {
+        color: white;
+        font-size: 22px;
+    }
+    #Experience {
+        color: white;
+        font-size: 23px;
+    }
+    #Skills {
+        color: white;
+    }
+    #Projects {
+        color: white; 
+    }
+    #Connect {
+        color: blue;
+        font-size: 22px;
+    }
+}
+
+/* Body */
 body {
     background-color: lightpink;
     color: black;
@@ -77,4 +102,41 @@ h2 {
 
 #Connect a {
     color: blueviolet;
+} 
+
+/* =================== */ 
+/* Tablet */
+/* =================== */
+@media (min-width: 768px) {
+    h2 {
+        color: purple;
+        background-color: lightpink;
+        font-size: 25px;
+    }
+    .experience-header {
+        font-size: 18px;
+        color: black;
+    }
+    #About {
+        font-style: italic;
+        font-size: 22px;
+    }
+}
+
+/* =================== */ 
+/* Desktop */ 
+/* =================== */
+@media (min-width:1024px) {
+    h2 {
+        font-size: 30px;
+        color: blue;
+    }
+    #Connect {
+        background-color: pink;
+        font-size: 24px;
+    }
+    #Connect a {
+        font-size: 22px;
+        color: red;
+    }
 }
