@@ -103,6 +103,18 @@ h2 {
     background-color: lightskyblue;
 }
 
+#Form {
+    background-color: lightskyblue;
+    font-size:18px;
+}
+
+#Messages {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
 #Connect {
     background-color:lightblue;
 }
