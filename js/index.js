@@ -26,14 +26,14 @@ for (let i = 0; i < skills.length; i++) {
 };
 
 //----------- MESSAGE FORM -----------//
-const messageForm = document.querySelector("form[name=leave_messages]"); 
+const messageForm = document.querySelector("form[name=leave_message]"); 
 
 messageForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const userName = event.target.userName.value;
-    const userEmail = event.target.userEmail.value;
-    const userMessage = event.target.userMessage.value; 
+    const userName = event.target.usersName.value;
+    const userEmail = event.target.usersEmail.value;
+    const userMessage = event.target.usersMessage.value; 
 
     console.log("Name: " + userName);
     console.log("Email: " + userEmail);
