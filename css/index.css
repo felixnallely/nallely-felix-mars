@@ -101,6 +101,8 @@ h2 {
 
 #Projects {
     background-color: lightskyblue;
+    font-size: 18px;
+    display: flex;
 }
 
 #Form {
