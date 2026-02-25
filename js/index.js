@@ -58,3 +58,36 @@ messageForm.addEventListener("submit", function(event) {
 
     messageForm.reset();
 });
+
+// ----------- PROJECT SECTION ----------- //
+fetch ("https://api.github.com/users/felixnallely/repos")
+  .then(response => response.json())
+  .then((response) => {
+    if (!response.ok) {
+        throw new Error ("Failed to fetch repositories. Please try again later.");
+    }
+
+    return response();
+  })
+  .then((repositories) => {
+    repositories = JSON.parse(this.repositories);
+    console.log("Repositories: ", repositories);
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = repositories[i].html_url;
+        link.textContent = repositories[i].name;
+        project.appendChild(link);
+        projectList.appendChild(project);
+    }
+ })
+  .catch((error) => {
+    console.error("Error fetching repositories:", error);
+    const projectSection = document.getElementById("Projects");
+    const errorMessage = document.createElement("p");
+    errorMessage.innerHTML = "Unable to load projects. Please try again later.";
+    projectSection.appendChild(errorMessage);
+  });
