@@ -61,17 +61,14 @@ messageForm.addEventListener("submit", function(event) {
 
 // ----------- PROJECT SECTION ----------- //
 fetch ("https://api.github.com/users/felixnallely/repos")
-  .then(response => response.json())
-  .then((response) => {
+  .then(response => {
     if (!response.ok) {
         throw new Error ("Failed to fetch repositories. Please try again later.");
     }
-
-    return response();
+    return response.json();
   })
-  .then((repositories) => {
-    repositories = JSON.parse(this.repositories);
-    console.log("Repositories: ", repositories);
+  .then(respositories => {
+    console.log("Respositories: ", respositories);
     const projectSection = document.getElementById("Projects");
     const projectList = projectSection.querySelector("ul");
 
@@ -83,8 +80,8 @@ fetch ("https://api.github.com/users/felixnallely/repos")
         project.appendChild(link);
         projectList.appendChild(project);
     }
- })
-  .catch((error) => {
+  })
+  .catch (error => {
     console.error("Error fetching repositories:", error);
     const projectSection = document.getElementById("Projects");
     const errorMessage = document.createElement("p");
