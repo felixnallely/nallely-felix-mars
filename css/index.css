@@ -105,6 +105,11 @@ h2 {
     display: flex;
 }
 
+#Projects ul {
+    list-style: none;
+    display: flex;
+}
+
 #Form {
     background-color: lightskyblue;
     font-size:18px;

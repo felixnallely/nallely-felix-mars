@@ -67,8 +67,8 @@ fetch ("https://api.github.com/users/felixnallely/repos")
     }
     return response.json();
   })
-  .then(respositories => {
-    console.log("Respositories: ", respositories);
+  .then(repositories => {
+    console.log("Repositories: ", repositories);
     const projectSection = document.getElementById("Projects");
     const projectList = projectSection.querySelector("ul");
 
