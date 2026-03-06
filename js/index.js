@@ -10,7 +10,7 @@ const thisYear = today.getFullYear();
 
 footer = document.querySelector("footer");
 const copyright = document.createElement("p");
-copyright.innerHTML = `Copyright © ${thisYear} Nallely Felix. All rights reserved.`;
+copyright.innerHTML = `Copyright \u00A9 ${thisYear} Nallely Felix. All rights reserved.`;
 footer.appendChild(copyright); 
 footer.style.textAlign = "center"; 
 
