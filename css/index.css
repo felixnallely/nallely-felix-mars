@@ -4,11 +4,11 @@
 @media (min-width:600px) {
     #About {
         color: white;
-        font-size: 22px;
+        font-size: 14px;
     }
     #Experience {
         color: white;
-        font-size: 23px;
+        font-size: 14px;
     }
     #Skills {
         color: white;
@@ -18,7 +18,7 @@
     }
     #Connect {
         color: blue;
-        font-size: 22px;
+        font-size: 14px;
     }
 }
 
@@ -36,15 +36,15 @@ header {
 }
 
 header nav ul{
-    display: flex; 
+    display: flex;
     justify-content: center;
     list-style-type: none; 
     gap: 20px;
 }
-
+ 
 h1 { 
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     color: purple;
     border: groove black 6px;
 }
@@ -57,8 +57,12 @@ section {
 
 h2 {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
+}
+
+h3 {
+    font-size: 15px;
 }
 
 #About {
@@ -95,17 +99,24 @@ h2 {
 }
 
 #Skills li {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 
 #Projects {
     background-color: lightskyblue;
+    font-size: 16px;
+}
+
+#Projects ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 #Form {
     background-color: lightskyblue;
-    font-size:18px;
+    font-size:16px;
 }
 
 #Messages {
@@ -136,15 +147,21 @@ h2 {
     h2 {
         color: purple;
         background-color: lightpink;
-        font-size: 25px;
+        font-size: 18px;
     }
     .experience-header {
         font-size: 18px;
         color: black;
     }
+
+    .experience-description {
+        font-size: 16px;
+    }
+
     #About {
         font-style: italic;
-        font-size: 22px;
+        font-size: 16px;
+        border: dashed black 3px;
     }
 }
 
@@ -153,15 +170,16 @@ h2 {
 /* =================== */
 @media (min-width:1024px) {
     h2 {
-        font-size: 30px;
+        font-size: 20px;
         color: blue;
     }
     #Connect {
         background-color: pink;
-        font-size: 24px;
+        font-size: 18px;
+        border: dashed black 3px;
     }
     #Connect a {
-        font-size: 22px;
-        color: red;
+        font-size: 16px;
+        color: rgb(32, 16, 30);
     }
 }
